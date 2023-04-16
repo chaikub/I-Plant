@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://kit.fontawesome.com/466f7f0339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+   <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5">
+                    <div class="box">
+                        <div class="columns is-vcentered">
+                            <div class="column is-3"></div>
+                            <div class="column is-3">
+                              <figure class="image is-128x128">
+                                <img src="./src/plant.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="column is-4">
+                                <p class="title is-1 has-text-black">I-Plant</p>
+                            </div>
+                            <div class="column is-2"></div>
+                        </div>
+                        <div class="field">
+                        <label for="" class="label is-size-5">Username</label>
+                        <div class="control has-icons-left">
+                            <input type="email" placeholder="username" class="input is-medium" v-model="username" required>
+                            <span class="icon is-small is-left">
+                            <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="field">
+                        <label for="" class="label is-size-5">Password</label>
+                        <div class="control has-icons-left">
+                            <input type="password" placeholder="*******" class="input is-medium" v-model="password" required>
+                            <span class="icon is-small is-left">
+                            <i class="fa fa-lock"></i>
+                            </span>
+                        </div>
+                        </div>
+                        <div class="field has-text-centered">
+                            <a href="./index.html" type="submit" class="button is-dark is-medium my-5 is-fullwidth" @click="signInButton">
+                                Sign In
+                            </a>
+                        </div>
+                        <div class="field has-text-centered">
+                            <div class="is-dark is-medium my-5">
+                                No Account?
+                                <a class="has-text-info" href="./signUp.html">Sign Up</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
