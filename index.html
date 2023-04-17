@@ -14,8 +14,9 @@
 
 <body>
 
-  <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full">
-    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4" style="margin-left: 170px; margin-right: 170px;">
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full" style="z-index: 1;">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
+      style="margin-left: 170px; margin-right: 170px;">
       <a href="I-Plant.html" class="flex items-center">
         <img src="./src/plant.png" class="h-8 mr-3" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">I-Plant</span>
@@ -33,7 +34,7 @@
         <!-- Dropdown menu -->
         <div
           class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-          id="user-dropdown">
+          id="user-dropdown" >
           <div class="px-4 py-3">
 
             <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@abc.com</span>
@@ -76,11 +77,11 @@
   <div class="container mx-auto ">
     <!-- ... -->
     <div class="container" style="margin-bottom: 10px;">
-      <button style="position: absolute; right: 200px; z-index: -1;" type="button"
+      <button style="position: absolute; right: 200px; z-index: 0;" type="button"
         class="w-12 h-12 fixed text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ">+</button>
     </div>
 
-    <div class="container mt-10" style="margin-top: 100px;">
+    <div class="container mt-10" style="margin-top: 100px; z-index: 0;" >
       <h3 class="text-2xl font-bold dark:text-white">Dashboard</h3>
       <hr class="h-px my-6 bg-gray-200 border-1 dark:bg-gray-700">
     </div>
@@ -91,7 +92,8 @@
 
     <div class="grid grid-cols-5 gap-5">
       <div
-        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style="width: 300px; height: 300px;">
+        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        style="width: 300px; height: 300px;">
         <div class="flex justify-end px-3 pt-3">
           <button id="dropdownButton" data-dropdown-toggle="dropdown"
             class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
@@ -133,7 +135,8 @@
       </div>
 
       <div
-        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style="width: 300px; height: 300px;">
+        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        style="width: 300px; height: 300px;">
         <div class="flex justify-end px-3 pt-3">
           <button id="dropdownButton" data-dropdown-toggle="dropdown"
             class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
@@ -175,7 +178,8 @@
       </div>
 
       <div
-        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style="width: 300px; height: 300px;">
+        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        style="width: 300px; height: 300px;">
         <div class="flex justify-end px-3 pt-3">
           <button id="dropdownButton" data-dropdown-toggle="dropdown"
             class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
@@ -223,8 +227,8 @@
     </div>
 
     <div class="grid grid-cols-5 gap-5">
-      <div
-        class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style="width: 300px; height: 300px;">
+      <div class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        style="width: 300px; height: 300px;">
         <div class="flex justify-end px-3 pt-3">
           <button id="dropdownButton" data-dropdown-toggle="dropdown"
             class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
@@ -258,7 +262,9 @@
             <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">OFF</span>
             <label class="relative inline-flex items-center cursor-pointer">
               <input type="checkbox" value="" class="sr-only peer">
-              <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              <div
+                class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+              </div>
             </label>
             <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">ON</span>
           </div>
@@ -266,8 +272,8 @@
       </div>
 
       <div class="grid grid-cols-5 gap-5">
-        <div
-          class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style="width: 300px; height: 300px;">
+        <div class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="width: 300px; height: 300px;">
           <div class="flex justify-end px-3 pt-3">
             <button id="dropdownButton" data-dropdown-toggle="dropdown"
               class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
@@ -275,7 +281,8 @@
               <span class="sr-only">Open dropdown</span>
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
+                <path
+                  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z">
                 </path>
               </svg>
             </button>
@@ -301,7 +308,9 @@
               <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">OFF</span>
               <label class="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" value="" class="sr-only peer">
-                <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <div
+                  class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
               </label>
               <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">ON</span>
             </div>
