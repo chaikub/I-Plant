@@ -5,8 +5,9 @@ pipeline {
             stage('Initialize Stage') {
                 steps {
                     echo 'Initial : Delete containers and images'
-                     dir('devTool_project') {
+                     dir('devTool_project')
                         echo "Current path is  ${pwd()}"
+                        git fetch
                         sh 'docker-compose down --rmi all --volumes || true'
                      }
                 }
