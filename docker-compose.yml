@@ -5,4 +5,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: chaikub/I-PLANT-Web_Server:1.0
+    image: chaikub/i-plant-web_server:1.0
