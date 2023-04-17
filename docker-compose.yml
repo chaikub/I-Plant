@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  Frontend:
+    build:
+      dockerfile: Dockerfile
+    image: chaikub/I-PLANT-Web_Server:1.0
